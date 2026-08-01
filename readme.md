@@ -19,11 +19,6 @@ The design includes specific additions to address reliability issues common in s
 *   **Layout:** Continuous bottom ground plane for return paths. Decoupling capacitors (C1-C4) are routed near the IC power pins.
 *   **Pinout:** 3V3, GND, TXD, RXD, and 5V broken out to a standard 2.54mm pitch header.
 
-## Repository Layout
-*   `/Hardware`: KiCad project files, schematic, and PCB layout.
-*   `/Gerbers`: Fabrication files.
-*   `/Images`: Renderings and layout exports.
-
 ## Board Images
 
 ### Schematic
