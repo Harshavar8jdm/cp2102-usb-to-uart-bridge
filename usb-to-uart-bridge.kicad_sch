@@ -4,6 +4,13 @@
 	(generator_version "10.0")
 	(uuid "f15ea1dc-dc42-4b5e-ad96-cbc8a376b3e2")
 	(paper "A4")
+	(title_block
+		(title "CP2102 USB To UART Bridge")
+		(date "2026-08-01")
+		(rev "V1.0")
+		(company "HTronics")
+		(comment 1 "Designed By - Harsha")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x05_Pin"
 			(pin_names
@@ -1159,6 +1166,146 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
 					(name ""
 						(effects
 							(font
@@ -2545,6 +2692,54 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "USB-C Connector"
+		(exclude_from_sim no)
+		(at 45.339 61.722 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "496af50a-4b7b-40ef-9c4f-b5d76535e228")
+	)
+	(text "Output Header\n\n"
+		(exclude_from_sim no)
+		(at 210.693 64.262 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "5242fe80-8b62-4ad4-bb9e-cb65b9e98546")
+	)
+	(text "USB-to-UART Bridge Converter Breakout Module\n"
+		(exclude_from_sim no)
+		(at 149.733 23.622 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+		)
+		(uuid "80157101-0a80-4a3b-ab69-3d84e7251e35")
+	)
+	(text "USB-to-UART bridge controller\n"
+		(exclude_from_sim no)
+		(at 143.129 151.638 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "d9294cf4-ad8b-4c7a-abaa-a23620d6c7d5")
+	)
 	(junction
 		(at 138.43 64.77)
 		(diameter 0)
@@ -2652,20 +2847,12 @@
 		(uuid "412b6564-6adf-4786-9f8c-dc1cdf9cbd9c")
 	)
 	(no_connect
-		(at 59.69 88.9)
-		(uuid "69c0dc03-eca0-4627-8548-81f745253813")
-	)
-	(no_connect
 		(at 151.13 110.49)
 		(uuid "6ace9034-aa8b-4f43-88ae-066170081c85")
 	)
 	(no_connect
 		(at 59.69 111.76)
 		(uuid "70c75a25-3163-4234-aa31-ce3306453276")
-	)
-	(no_connect
-		(at 59.69 86.36)
-		(uuid "870d0907-c195-4ac0-baf1-490f77272252")
 	)
 	(no_connect
 		(at 151.13 87.63)
@@ -2867,6 +3054,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 86.36) (xy 74.93 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4019b49b-f1ba-4151-8edf-8bf702ecdc9d")
+	)
+	(wire
+		(pts
 			(xy 138.43 133.35) (xy 138.43 137.16)
 		)
 		(stroke
@@ -2897,6 +3094,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 88.9) (xy 74.93 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "485bd953-833c-44d2-b771-9f98818ec00b")
+	)
+	(wire
+		(pts
 			(xy 44.45 119.38) (xy 44.45 121.92)
 		)
 		(stroke
@@ -2924,6 +3131,16 @@
 			(type default)
 		)
 		(uuid "4efb3030-8fd5-40c9-afa2-e5a2f7cdcb33")
+	)
+	(wire
+		(pts
+			(xy 88.9 86.36) (xy 88.9 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "516d22ef-0343-4387-b2b0-229de5dfcb2d")
 	)
 	(wire
 		(pts
@@ -2997,6 +3214,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 88.9) (xy 85.09 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c2b8051-db6b-42aa-886a-8c3e561fd67b")
+	)
+	(wire
+		(pts
 			(xy 96.52 60.96) (xy 96.52 63.5)
 		)
 		(stroke
@@ -3004,6 +3231,16 @@
 			(type default)
 		)
 		(uuid "6f02084c-7d84-428f-a37b-e8799e26d06e")
+	)
+	(wire
+		(pts
+			(xy 85.09 88.9) (xy 85.09 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "723afab3-036f-4d31-a08e-203c10122194")
 	)
 	(wire
 		(pts
@@ -3214,6 +3451,16 @@
 			(type default)
 		)
 		(uuid "aae142fd-786d-4603-80e0-fff696682569")
+	)
+	(wire
+		(pts
+			(xy 82.55 86.36) (xy 88.9 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adcd711c-7137-4168-9812-5ae4a76e0984")
 	)
 	(wire
 		(pts
@@ -4003,6 +4250,164 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 78.74 88.9 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5fb80ffc-bcf2-4cf7-824d-f50e2447873c")
+		(property "Reference" "R2"
+			(at 78.74 91.186 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5.1K"
+			(at 78.74 89.027 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 78.74 90.678 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 78.74 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "86ccabbe-0b04-4426-af19-29e80ec6b418")
+		)
+		(pin "1"
+			(uuid "3b51f1fb-1a90-4fe2-9fff-8aa521eb19cd")
+		)
+		(instances
+			(project "usb-to-uart-bridge"
+				(path "/f15ea1dc-dc42-4b5e-ad96-cbc8a376b3e2"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 78.74 86.36 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7b688e63-aacf-4aaa-916a-ac1276d4562c")
+		(property "Reference" "R1"
+			(at 78.74 84.074 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5.1K"
+			(at 78.613 86.487 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 78.74 88.138 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 78.74 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "899a4ad0-96e5-47a9-bb5b-35db34d77007")
+		)
+		(pin "1"
+			(uuid "26c4b412-4b0d-49a5-96bf-7df05736909e")
+		)
+		(instances
+			(project "usb-to-uart-bridge"
+				(path "/f15ea1dc-dc42-4b5e-ad96-cbc8a376b3e2"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Interface_USB:CP2102N-Axx-xQFN28")
 		(at 138.43 100.33 0)
 		(unit 1)
@@ -4025,7 +4430,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "CP2102N-Axx-xQFN28"
+		(property "Value" "CP2102N"
 			(at 140.5733 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4808,6 +5213,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 85.09 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cb830bd7-4faa-4b1f-8858-e77bd55d5cf0")
+		(property "Reference" "#PWR014"
+			(at 85.09 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 84.963 95.504 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 85.09 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "88942a90-23d9-4fc3-a8f6-8b1346800a52")
+		)
+		(instances
+			(project "usb-to-uart-bridge"
+				(path "/f15ea1dc-dc42-4b5e-ad96-cbc8a376b3e2"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 138.43 44.45 0)
 		(unit 1)
@@ -5049,6 +5531,83 @@
 			(project "usb-to-uart-bridge"
 				(path "/f15ea1dc-dc42-4b5e-ad96-cbc8a376b3e2"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 88.9 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d6fee0bf-53fc-4b00-b5f2-7a29bcb2fb29")
+		(property "Reference" "#PWR015"
+			(at 88.9 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 89.027 95.504 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 88.9 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "455c8d99-7f12-4fe1-abef-2725624b4c0f")
+		)
+		(instances
+			(project "usb-to-uart-bridge"
+				(path "/f15ea1dc-dc42-4b5e-ad96-cbc8a376b3e2"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
